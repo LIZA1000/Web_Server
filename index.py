@@ -1,8 +1,7 @@
 from flask import Flask, session, redirect, render_template, flash, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
 from models import UsersModel, CarsModel, DealersModel
-from add_dealer import AddDealerForm
-from forms import LoginForm, RegisterForm, AddCarForm, SearchPriceForm, SearchDealerForm
+from forms import LoginForm, RegisterForm, AddCarForm, SearchPriceForm, SearchDealerForm, AddDealerForm
 from db import DB
 
 app = Flask(__name__)
